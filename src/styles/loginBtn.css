@@ -1,0 +1,143 @@
+.buttonLogin {
+    width: 110%;
+    /* height: 45px; */
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-weight: 700; */
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   .buttonLogin::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #1899D6;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   .buttonLogin:hover::before {
+    width: 100%;
+   }
+   
+   .buttonLogin:hover {
+    color: white;
+   }
+   
+   .buttonLogin:active:before {
+    background: #b9b9b9;
+   }
+
+/* NAVBAR DRAWER */
+
+.drawer {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.drawer-list a li {
+    color: black;
+    margin: 5px 0px 5px 0px;
+    border-bottom: 1px solid #E5E4E2 !important;
+}
+
+.drawer-list li {
+    color: black;
+    margin: 5px 0px 5px 0px;
+    border-bottom: 1px solid #E5E4E2 !important;
+    border-top: 0px solid white !important; 
+    cursor: pointer;
+}
+
+.drawer-list li:hover {
+    background: white !important;
+    color: black;
+}
+
+.drawer-list a li:hover {
+    background: #E5E4E2 !important;
+}
+
+
+.drawer-list-categories {
+    visibility: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: visibility 2.3s, opacity 2.3s, max-height 2s linear;
+}
+
+
+.drawer-categories .row .col-4::before {
+    content: "+";
+}
+
+.drawer-categories:hover .row .col-4::before {
+    animation: categoriesOpenClose 2s linear forwards;
+}
+
+@keyframes categoriesOpenClose {
+    0% {
+        opacity: 0;
+        content: "−";
+      }
+
+      50% {
+
+        opacity: 0.5;
+      }
+      
+      100% {
+        opacity: 1;
+        content: "−";
+      }
+}
+
+
+.drawer-categories:hover .drawer-list-categories {
+    visibility: visible;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.drawer-list-categories ul li {
+    color: grey;
+    border: 0px solid white !important;
+}
+
+
+.drawer button {
+    display: flex;
+    height: 3em;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+   }
+   
+   .drawer button > svg {
+    /* margin-right: 5px;
+    margin-left: 5px; */
+    transition: all 0.4s ease-in;
+   }
+   
+   .drawer button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }

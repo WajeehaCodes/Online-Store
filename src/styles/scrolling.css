@@ -1,0 +1,13 @@
+.logo-scroll {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-scroll {
+    z-index: 3;
+    position: fixed;
+    bottom: 70px;
+    right: 25px;
+    border-radius: 50%;
+    padding: 0.3rem;
+}

@@ -1,0 +1,31 @@
+.select-total-cart-model {
+    font-size: 14px;
+	color: #434445;
+    font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+    overflow: hidden;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 26px;
+	margin-bottom: 30px;
+    text-align: right;
+}
+
+.modal-footer-btn-continue {
+	background: white !important;
+	color: #434445 !important;
+	border: 1px solid #434445;
+	border-radius: 0px !important;
+}
+
+
+
+.modal-footer-btn-cart {
+	background: #434445 !important;
+	border-radius: 0px !important;
+}
+
+.modal-footer-btn-cart:hover {
+	background: white !important;
+	color: #434445 !important;
+}
